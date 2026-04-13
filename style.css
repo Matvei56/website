@@ -1,0 +1,123 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fcfcfc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header & Navigation */
+header {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* Main Content Areas */
+main {
+    padding: 4rem 0;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Contact List */
+.contact-links {
+    list-style: none;
+}
+
+.contact-links li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.contact-links a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    header {
+        padding: 2rem 0;
+    }
+    
+    main {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+}
