@@ -27,4 +27,4 @@ jobs:
         run: docker build -t ghcr.io/matvei56/website:latest .
 
       - name: Push Docker image
-        run:docker push ghcr.io/matvei56/website:latest
+        run: docker push ghcr.io/matvei56/website:latest
